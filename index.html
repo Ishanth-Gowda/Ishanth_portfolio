@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ishanth SG — Full-Stack Developer</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        darkbg: '#020403',
+                        cardbg: '#141413',
+                        panelbg: '#1A2324',
+                        accent: '#5F2E1B',
+                        muted: '#9ca3af',
+                    },
+                    fontFamily: {
+                        serif: ['Playfair Display', 'Georgia', 'serif'],
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body class="bg-darkbg text-zinc-100 font-sans antialiased selection:bg-accent selection:text-white">
+
+    <!-- Fixed Header / Navigation -->
+    <header class="fixed top-0 left-0 w-full z-50 bg-[#020403]/85 backdrop-blur-md border-b border-[#1A2324]">
+        <div class="max-w-7xl mx-auto px-6 h-20 grid grid-cols-3 items-center">
+            <!-- Left: Name -->
+            <div>
+                <a href="#" class="font-serif text-xl font-bold tracking-wide text-white">Ishanth S G</a>
+            </div>
+
+            <!-- Center: Navigation Links -->
+            <nav class="hidden md:flex justify-center items-center space-x-8 text-sm font-medium text-muted">
+                <a href="#about" class="hover:text-white transition-colors">About</a>
+                <a href="#skills" class="hover:text-white transition-colors">Skills</a>
+                <a href="#projects" class="hover:text-white transition-colors">Projects</a>
+                <a href="#contact" class="hover:text-white transition-colors">Contact</a>
+            </nav>
+
+            <!-- Right: Social Icons -->
+            <div class="flex items-center justify-end space-x-4">
+                <a href="https://github.com/Ishanth-Gowda" target="_blank" rel="noopener noreferrer"
+                    class="text-muted hover:text-white text-lg transition-colors" title="GitHub">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/ishanth-s-g-8b0720186/" target="_blank" rel="noopener noreferrer"
+                    class="text-muted hover:text-white text-lg transition-colors" title="LinkedIn">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section
+        class="min-h-screen flex flex-col justify-center items-center text-center px-6 max-w-5xl mx-auto pt-18 relative">
+        <div class="max-w-3xl mx-auto flex flex-col items-center">
+            <span class="text-[#c87d60] text-sm font-semibold tracking-widest uppercase block mb-4">Full-Stack Developer
+                (MERN / React / Gen-AI)</span>
+            <h1 class="font-serif text-5xl md:text-7xl font-normal tracking-tight leading-[1.1] mb-6 text-zinc-100">
+                Building scalable <br><span class="italic text-[#c87d60]">web applications.</span>
+            </h1>
+            <p class="text-muted text-lg md:text-xl font-light leading-relaxed mb-10 max-w-2xl">
+                Hi! I'm a fullstack developer specializing in the MERN stack. As a
+                modern developer, I can actively integrate Gen-AI tools into my workflow to accelerate debugging,
+                optimize queries, and write cleaner code. I'm eager to bring this blend of
+                foundational MERN skills and AI-driven efficiency to an innovative development team.
+            </p>
+            <div class="flex flex-wrap justify-center items-center gap-4">
+                <a href="#projects"
+                    class="bg-[#5F2E1B] text-white hover:bg-[#7a3c24] px-7 py-3.5 rounded-none font-medium text-sm transition-all flex items-center gap-2 border border-[#5F2E1B]">
+                    View my work <i class="fa-solid fa-arrow-right text-xs"></i>
+                </a>
+                <a href="#contact"
+                    class="bg-transparent text-zinc-300 border border-[#1A2324] hover:border-zinc-500 px-7 py-3.5 rounded-none font-medium text-sm transition-all">
+                    Get in touch
+                </a>
+            </div>
+        </div>
+
+        <!-- Centered Scroll Indicator -->
+        <div
+            class="absolute bottom-10 left-1/2 -translate-x-1/2 hidden md:flex flex-col items-center gap-2 text-xs tracking-widest text-muted uppercase">
+            <span>Scroll down</span>
+            <span class="h-8 w-[1px] bg-[#5F2E1B] inline-block"></span>
+        </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about" class="py-28 px-6 max-w-7xl mx-auto border-t border-[#1A2324]">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+            <div class="relative group">
+                <div
+                    class="absolute -inset-1 bg-gradient-to-r from-[#5F2E1B] to-[#1A2324] rounded-none blur opacity-30">
+                </div>
+                <div class="relative bg-cardbg p-3 border border-[#1A2324]">
+                    <img src="./assets/prof1.PNG" alt="Ishanth SG Portrait"
+                        class="w-full h-[480px] object-cover grayscale contrast-125 group-hover:grayscale-0 transition-all duration-700">
+                </div>
+            </div>
+            <div>
+                <span class="text-[#c87d60] text-xs font-semibold tracking-widest uppercase block mb-3">About Me</span>
+                <h2 class="font-serif text-4xl md:text-5xl font-normal mb-6 text-zinc-100">
+                    From IT support to <span class="italic text-[#c87d60]">Web Development.</span>
+                </h2>
+                <p class="text-muted text-base leading-relaxed mb-6 font-light">
+                    Full-Stack Developer with 3 years of professional IT support and incident
+                    management experience at Cognizant. I'm looking to successfully transition into software engineering
+                    through
+                    rigorous project based learning and certifications.
+                </p>
+                <p class="text-muted text-base leading-relaxed mb-8 font-light">
+                    My technical scope covers frontend frameworks like React and Javascript, robust backends built with
+                    Node.js
+                    and Express, along with MongoDB database, and cutting-edge Gen-AI integration tooling to accelerate
+                    product development.
+                </p>
+
+                <!-- View Resume Button with Placeholder Link -->
+                <div class="mb-10">
+                    <a href="./assets/Ishanth_SG_Resume.pdf" target="_blank" rel="noopener noreferrer"
+                        class="inline-flex items-center gap-2 bg-[#141413] text-zinc-200 border border-[#1A2324] hover:border-[#5F2E1B] px-6 py-3 text-sm font-medium transition-all">
+                        <i class="fa-solid fa-file-lines text-[#c87d60]"></i> View Resume <i
+                            class="fa-solid fa-arrow-up-right-from-square text-xs text-muted"></i>
+                    </a>
+                </div>
+
+                <div class="grid grid-cols-3 gap-6 pt-6 border-t border-[#1A2324]">
+                    <div>
+                        <span class="block font-serif text-3xl text-[#c87d60] font-normal mb-1">3+</span>
+                        <span class="text-xs text-muted tracking-wide uppercase">Years IT Exp</span>
+                    </div>
+                    <div>
+                        <span class="block font-serif text-3xl text-[#c87d60] font-normal mb-1">5+</span>
+                        <span class="text-xs text-muted tracking-wide uppercase">Core Projects</span>
+                    </div>
+                    <div>
+                        <span class="block font-serif text-3xl text-[#c87d60] font-normal mb-1">B.Tech</span>
+                        <span class="text-xs text-muted tracking-wide uppercase">CSE Graduate</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills & Tools Section -->
+    <section id="skills" class="py-28 px-6 max-w-7xl mx-auto border-t border-[#1A2324]">
+        <div class="max-w-3xl mb-16">
+            <span class="text-[#c87d60] text-xs font-semibold tracking-widest uppercase block mb-3">Capabilities</span>
+            <h2 class="font-serif text-4xl md:text-5xl font-normal text-zinc-100">
+                Skills & <span class="italic text-[#c87d60]">tools</span>
+            </h2>
+        </div>
+
+        <div class="flex flex-wrap gap-3">
+            <span class="bg-cardbg border border-[#1A2324] text-zinc-300 px-5 py-2.5 text-sm font-medium">JavaScript
+                (ES6+)</span>
+            <span class="bg-cardbg border border-[#1A2324] text-zinc-300 px-5 py-2.5 text-sm font-medium">Node.js &
+                Express.js</span>
+            <span class="bg-cardbg border border-[#1A2324] text-zinc-300 px-5 py-2.5 text-sm font-medium">MongoDB</span>
+            <span class="bg-cardbg border border-zinc-800 text-zinc-300 px-5 py-2.5 text-sm font-medium">REST APIs &
+                WebSockets</span>
+            <span class="bg-cardbg border border-[#1A2324] text-zinc-300 px-5 py-2.5 text-sm font-medium">React.js &
+                Redux Toolkit</span>
+            <span class="bg-cardbg border border-[#1A2324] text-zinc-300 px-5 py-2.5 text-sm font-medium">Git &
+                GitHub</span>
+            <span class="bg-cardbg border border-[#1A2324] text-zinc-300 px-5 py-2.5 text-sm font-medium">Vercel &
+                Render</span>
+            <span class="bg-cardbg border border-[#1A2324] text-zinc-300 px-5 py-2.5 text-sm font-medium">Gen-AI Tools
+                (Cursor, Copilot, Claude, Lovable, Gemini AI studio, ChatGPT)</span>
+            <span class="bg-cardbg border border-[#1A2324] text-zinc-300 px-5 py-2.5 text-sm font-medium">Chrome
+                DevTools</span>
+            <span class="bg-cardbg border border-[#1A2324] text-zinc-300 px-5 py-2.5 text-sm font-medium">Cookies & JWT
+                Authentication</span>
+            <span class="bg-cardbg border border-[#1A2324] text-zinc-300 px-5 py-2.5 text-sm font-medium">Postman for
+                API testing</span>
+            <span class="bg-cardbg border border-[#1A2324] text-zinc-300 px-5 py-2.5 text-sm font-medium">VS code</span>
+            <span class="bg-cardbg border border-[#1A2324] text-zinc-300 px-5 py-2.5 text-sm font-medium">HTML5 / CSS3 /
+                SCSS</span>
+            <span class="bg-cardbg border border-[#1A2324] text-zinc-300 px-5 py-2.5 text-sm font-medium">Tailwind CSS &
+                Bootstrap basics</span>
+            <span
+                class="bg-cardbg border border-[#1A2324] text-zinc-300 px-5 py-2.5 text-sm font-medium">Figma-to-HTML/CSS</span>
+
+            <span class="bg-cardbg border border-[#1A2324] text-zinc-300 px-5 py-2.5 text-sm font-medium">TypeScript
+                basics</span>
+        </div>
+    </section>
+
+    <!-- Project Gallery Section -->
+    <section id="projects" class="py-28 px-6 max-w-7xl mx-auto border-t border-[#1A2324]">
+        <div class="max-w-3xl mb-16">
+            <span class="text-[#c87d60] text-xs font-semibold tracking-widest uppercase block mb-3">Some of my works</span>
+            <h2 class="font-serif text-4xl md:text-5xl font-normal text-zinc-100">
+                Projects
+            </h2>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+            <!-- Project 1 -->
+            <a href="https://gen-ai-interview-project-eta.vercel.app/" target="_blank" rel="noopener noreferrer"
+                class="bg-cardbg border border-[#1A2324] p-8 flex flex-col justify-between group hover:border-[#5F2E1B] transition-all duration-300 cursor-pointer">
+                <div>
+                    <div class="flex justify-between items-center mb-6">
+                        <span class="text-xs text-[#c87d60] font-mono">Full-Stack / AI</span>
+                        <span class="text-muted group-hover:text-[#c87d60] transition-colors">
+                            <i class="fa-solid fa-arrow-up-right-from-square text-sm"></i>
+                        </span>
+                    </div>
+                    <h3
+                        class="font-serif text-2xl font-normal mb-3 text-zinc-100 group-hover:text-[#c87d60] transition-colors">
+                        GenAI Interview Planner & Resume Generator</h3>
+                    <p class="text-muted text-sm font-light leading-relaxed mb-6">
+                        MERN stack application integrated with Gemini AI models to generate customized career roadmaps,
+                        interview questions, and role-specific resumes.
+                    </p>
+                </div>
+                <div class="flex flex-wrap gap-2 pt-4 border-t border-[#1A2324]">
+                    <span class="text-[11px] bg-panelbg text-[#c87d60] px-2.5 py-1 font-mono">React</span>
+                    <span class="text-[11px] bg-panelbg text-[#c87d60] px-2.5 py-1 font-mono">MERN stack</span>
+                    <span class="text-[11px] bg-panelbg text-[#c87d60] px-2.5 py-1 font-mono">Gemini AI</span>
+                    <span class="text-[11px] bg-panelbg text-[#c87d60] px-2.5 py-1 font-mono">Puppeteer</span>
+                </div>
+            </a>
+
+            <!-- Project 2 -->
+            <a href="https://student-management-system-rouge-eta.vercel.app/" target="_blank" rel="noopener noreferrer"
+                class="bg-cardbg border border-[#1A2324] p-8 flex flex-col justify-between group hover:border-[#5F2E1B] transition-all duration-300 cursor-pointer">
+                <div>
+                    <div class="flex justify-between items-center mb-6">
+                        <span class="text-xs text-[#c87d60] font-mono">Full-Stack Platform</span>
+                        <span class="text-muted group-hover:text-[#c87d60] transition-colors">
+                            <i class="fa-solid fa-arrow-up-right-from-square text-sm"></i>
+                        </span>
+                    </div>
+                    <h3
+                        class="font-serif text-2xl font-normal mb-3 text-zinc-100 group-hover:text-[#c87d60] transition-colors">
+                        Student Management System (SMS)</h3>
+                    <p class="text-muted text-sm font-light leading-relaxed mb-6">
+                        Academic operations platform featuring secure role-based access control (Admin,
+                        Faculty, Student), attendance marking, charts, marks and GPA calculations.
+                    </p>
+                </div>
+                <div class="flex flex-wrap gap-2 pt-4 border-t border-[#1A2324]">
+                    <span class="text-[11px] bg-panelbg text-[#c87d60] px-2.5 py-1 font-mono">React 18</span>
+                    <span class="text-[11px] bg-panelbg text-[#c87d60] px-2.5 py-1 font-mono">Lovable</span>
+                    <span class="text-[11px] bg-panelbg text-[#c87d60] px-2.5 py-1 font-mono">TypeScript</span>
+                    <span class="text-[11px] bg-panelbg text-[#c87d60] px-2.5 py-1 font-mono">Supabase</span>
+                </div>
+            </a>
+
+            <!-- Project 3 -->
+            <a href="https://ishanth-gowda.github.io/MovieApp/" target="_blank" rel="noopener noreferrer"
+                class="bg-cardbg border border-[#1A2324] p-8 flex flex-col justify-between group hover:border-[#5F2E1B] transition-all duration-300 cursor-pointer">
+                <div>
+                    <div class="flex justify-between items-center mb-6">
+                        <span class="text-xs text-[#c87d60] font-mono">Frontend Application</span>
+                        <span class="text-muted group-hover:text-[#c87d60] transition-colors">
+                            <i class="fa-solid fa-arrow-up-right-from-square text-sm"></i>
+                        </span>
+                    </div>
+                    <h3
+                        class="font-serif text-2xl font-normal mb-3 text-zinc-100 group-hover:text-[#c87d60] transition-colors">
+                        Movie Watchlist App</h3>
+                    <p class="text-muted text-sm font-light leading-relaxed mb-6">
+                        Responsive movie browsing interface integrating the OMDb API with genre-based filtering and
+                        watchlist creation and deletion.
+                    </p>
+                </div>
+                <div class="flex flex-wrap gap-2 pt-4 border-t border-[#1A2324]">
+                    <span class="text-[11px] bg-panelbg text-[#c87d60] px-2.5 py-1 font-mono">React</span>
+                    <span class="text-[11px] bg-panelbg text-[#c87d60] px-2.5 py-1 font-mono">OMDb API</span>
+                    <span class="text-[11px] bg-panelbg text-[#c87d60] px-2.5 py-1 font-mono">CSS</span>
+                </div>
+            </a>
+
+            <!-- Project 4 -->
+            <a href="https://ishanth-gowda.github.io/WeatherForecast/" target="_blank" rel="noopener noreferrer"
+                class="bg-cardbg border border-[#1A2324] p-8 flex flex-col justify-between group hover:border-[#5F2E1B] transition-all duration-300 cursor-pointer">
+                <div>
+                    <div class="flex justify-between items-center mb-6">
+                        <span class="text-xs text-[#c87d60] font-mono">Frontend Application</span>
+                        <span class="text-muted group-hover:text-[#c87d60] transition-colors">
+                            <i class="fa-solid fa-arrow-up-right-from-square text-sm"></i>
+                        </span>
+                    </div>
+                    <h3
+                        class="font-serif text-2xl font-normal mb-3 text-zinc-100 group-hover:text-[#c87d60] transition-colors">
+                        Weather Forecast App</h3>
+                    <p class="text-muted text-sm font-light leading-relaxed mb-6">
+                        Translucent UI displaying real-time weather stats and 3-day forecasts via
+                        WeatherAPI integration.
+                    </p>
+                </div>
+                <div class="flex flex-wrap gap-2 pt-4 border-t border-[#1A2324]">
+                    <span class="text-[11px] bg-panelbg text-[#c87d60] px-2.5 py-1 font-mono">React</span>
+                    <span class="text-[11px] bg-panelbg text-[#c87d60] px-2.5 py-1 font-mono">WeatherAPI</span>
+                </div>
+            </a>
+
+            <!-- Project 5 -->
+            <a href="https://ishanth-gowda.github.io/ShoppingApp/" target="_blank" rel="noopener noreferrer"
+                class="bg-cardbg border border-[#1A2324] p-8 flex flex-col justify-between group hover:border-[#5F2E1B] transition-all duration-300 cursor-pointer">
+                <div>
+                    <div class="flex justify-between items-center mb-6">
+                        <span class="text-xs text-[#c87d60] font-mono">E-Commerce Frontend</span>
+                        <span class="text-muted group-hover:text-[#c87d60] transition-colors">
+                            <i class="fa-solid fa-arrow-up-right-from-square text-sm"></i>
+                        </span>
+                    </div>
+                    <h3
+                        class="font-serif text-2xl font-normal mb-3 text-zinc-100 group-hover:text-[#c87d60] transition-colors">
+                        Shopping Cart App</h3>
+                    <p class="text-muted text-sm font-light leading-relaxed mb-6">
+                        Responsive e-commerce platform with product browsing, category filtering, price sorting, cart total logic, and user
+                        authentication managed via Context API.
+                    </p>
+                </div>
+                <div class="flex flex-wrap gap-2 pt-4 border-t border-[#1A2324]">
+                    <span class="text-[11px] bg-panelbg text-[#c87d60] px-2.5 py-1 font-mono">React</span>
+                    <span class="text-[11px] bg-panelbg text-[#c87d60] px-2.5 py-1 font-mono">Context API</span>
+                    <span class="text-[11px] bg-panelbg text-[#c87d60] px-2.5 py-1 font-mono">CSS</span>
+                </div>
+            </a>
+
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-28 px-6 max-w-7xl mx-auto border-t border-[#1A2324]">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-16">
+            <div>
+                <span class="text-[#c87d60] text-xs font-semibold tracking-widest uppercase block mb-3">Get in
+                    Touch</span>
+                <h2 class="font-serif text-4xl md:text-5xl font-normal mb-6 text-zinc-100">
+                    Let's build <span class="italic text-[#c87d60]">something.</span>
+                </h2>
+                <p class="text-muted text-base leading-relaxed mb-8 font-light max-w-md">
+                    Currently seeking junior/entry-level MERN, React, or AI-assisted full-stack development
+                    roles. Feel free to connect via email or professional profiles.
+                </p>
+
+                <div class="space-y-4">
+                    <div class="flex items-center gap-4 text-zinc-300">
+                        <div
+                            class="w-10 h-10 bg-cardbg border border-[#1A2324] flex items-center justify-center text-[#c87d60]">
+                            <i class="fa-solid fa-envelope text-sm"></i>
+                        </div>
+                        <a href="mailto:ishanth.s.gowda@gmail.com"
+                            class="hover:text-[#c87d60] transition-colors text-sm">ishanth.s.gowda@gmail.com</a>
+                    </div>
+                    <div class="flex items-center gap-4 text-zinc-300">
+                        <div
+                            class="w-10 h-10 bg-cardbg border border-[#1A2324] flex items-center justify-center text-[#c87d60]">
+                            <i class="fa-brands fa-linkedin text-sm"></i>
+                        </div>
+                        <a href="https://www.linkedin.com/in/ishanth-s-g-8b0720186/" target="_blank"
+                            rel="noopener noreferrer"
+                            class="hover:text-[#c87d60] transition-colors text-sm flex items-center gap-1">
+                            LinkedIn Profile <i class="fa-solid fa-arrow-up-right-from-square text-xs"></i>
+                        </a>
+                    </div>
+                    <div class="flex items-center gap-4 text-zinc-300">
+                        <div
+                            class="w-10 h-10 bg-cardbg border border-[#1A2324] flex items-center justify-center text-[#c87d60]">
+                            <i class="fa-brands fa-github text-sm"></i>
+                        </div>
+                        <a href="https://github.com/Ishanth-Gowda" target="_blank" rel="noopener noreferrer"
+                            class="hover:text-[#c87d60] transition-colors text-sm flex items-center gap-1">
+                            GitHub Profile <i class="fa-solid fa-arrow-up-right-from-square text-xs"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Contact Form Box -->
+            <div class="bg-cardbg border border-[#1A2324] p-8">
+                <form id="contact-form" class="space-y-6">
+                    <div>
+                        <label class="block text-xs uppercase tracking-widest text-muted mb-2">Your Name</label>
+                        <input type="text" placeholder="John Doe" required
+                            class="w-full bg-darkbg border border-[#1A2324] px-4 py-3 text-sm text-zinc-100 focus:outline-none focus:border-[#5F2E1B] transition-colors">
+                    </div>
+                    <div>
+                        <label class="block text-xs uppercase tracking-widest text-muted mb-2">Email Address</label>
+                        <input type="email" placeholder="john@company.com" required
+                            class="w-full bg-darkbg border border-[#1A2324] px-4 py-3 text-sm text-zinc-100 focus:outline-none focus:border-[#5F2E1B] transition-colors">
+                    </div>
+                    <div>
+                        <label class="block text-xs uppercase tracking-widest text-muted mb-2">Message</label>
+                        <textarea rows="4" placeholder="Let's talk about an opportunity..." required
+                            class="w-full bg-darkbg border border-[#1A2324] px-4 py-3 text-sm text-zinc-100 focus:outline-none focus:border-[#5F2E1B] transition-colors resize-none"></textarea>
+                    </div>
+                    <button type="submit"
+                        class="w-full bg-[#5F2E1B] text-white hover:bg-[#7a3c24] py-3.5 font-medium text-sm transition-all border border-[#5F2E1B]">
+                        Send message
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer
+        class="py-12 px-6 max-w-7xl mx-auto border-t border-[#1A2324] flex flex-col md:flex-row justify-between items-center text-xs text-muted">
+        <p>&copy; 2026 Ishanth SG. Designed with precision.</p>
+        <div class="flex space-x-6 mt-4 md:mt-0">
+            <a href="https://github.com/Ishanth-Gowda" target="_blank" rel="noopener noreferrer"
+                class="hover:text-white transition-colors">GitHub</a>
+            <a href="https://www.linkedin.com/in/ishanth-s-g-8b0720186/" target="_blank" rel="noopener noreferrer"
+                class="hover:text-white transition-colors">LinkedIn</a>
+            <a href="./assets/Ishanth_SG_Resume.pdf" target="_blank" rel="noopener noreferrer"
+                class="hover:text-white transition-colors">Resume</a>
+        </div>
+    </footer>
+
+    <!-- Scroll-to-Top Button -->
+    <button id="scrollTopBtn" aria-label="Scroll to top"
+        class="fixed bottom-6 right-6 z-50 bg-[#1A2324] text-zinc-300 border border-[#5F2E1B] w-10 h-10 flex items-center justify-center opacity-0 pointer-events-none hover:bg-[#5F2E1B] hover:text-white transition-all duration-300">
+        <i class="fa-solid fa-arrow-up text-xs"></i>
+    </button>
+
+    <!-- Vanilla JS for Scroll Visibility & Feedback -->
+    <script>
+        // Scroll-to-top button logic (appears after scrolling down 2 sections / ~800px)
+        const scrollTopBtn = document.getElementById('scrollTopBtn');
+
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 800) {
+                scrollTopBtn.classList.remove('opacity-0', 'pointer-events-none');
+                scrollTopBtn.classList.add('opacity-100', 'pointer-events-auto');
+            } else {
+                scrollTopBtn.classList.remove('opacity-100', 'pointer-events-auto');
+                scrollTopBtn.classList.add('opacity-0', 'pointer-events-none');
+            }
+        });
+
+        scrollTopBtn.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+
+        // Contact form feedback handling
+        document.getElementById('contact-form').addEventListener('submit', function (e) {
+            e.preventDefault();
+            alert('Thank you for your message!');
+            this.reset();
+        });
+    </script>
+</body>
+
+</html>
